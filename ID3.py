@@ -9,7 +9,7 @@ from math import *
 data = pd.read_csv('new_data.csv')
 data['APPLY_TERM_TIME'] = data['APPLY_TERM_TIME'].astype(str)
 
-# 按违约比例进行随机分层抽样,抽100个样本
+# 按违约比例进行随机分层抽样,抽100个样本做测试集
 data1 = data[data.eval('Label == 1')]
 data0 = data[data.eval('Label == 0')]
 testing = pd.concat([data1.sample(46, random_state=10),
