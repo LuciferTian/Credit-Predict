@@ -17,6 +17,6 @@
 
 * ID3算法划分准则采取信息增益，对取值多的特征有偏好，且只能处理离散属性，不能处理连续属性；C4.5算法用信息增益率来修正ID3的偏好，对连续属性用二分法处理；C5.0所用内存更小，采用boosting方法多次迭代，在前一次的基础上学习，效果更好。但总的来说，CART既可做分类又可做回归，但节点只有二叉；其他几个算法只能做分类，其中ID3只接受离散属性。
 
-* ID3.py是基于ID3的思想手写的决策树代码，连续属性做二分处理，presicion是0.9，recall是0.93；CART.py是用python中sklearn库的决策树函数做的，precision是0.97，recall是0.97；C50.R是调用R语言中做C5.0算法的包，precision是0.93，recall是0.98.
+* ID3.py是基于ID3的思想手写的决策树代码，连续属性做二分处理，presicion是0.9，recall是0.93；CART.py是用python中sklearn库的决策树函数做的，precision是0.96，recall是0.98；C50.R是调用R语言中做C5.0算法的包，precision是0.93，recall是0.98.
 
 
